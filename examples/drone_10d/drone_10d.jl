@@ -133,9 +133,14 @@ solz1 = overapproximate(sol1, Zonotope);
 
 using Plots
 
-# Plots.plot(solz1, vars=(0, 1), linecolor="yellow", color=:yellow, alpha=0.8,
-#     xlab="t", ylab="x")
-# Plots.plot(solz1, vars=(0, 5), linecolor="green", color=:green, alpha=0.8,
+Plots.plot(solz1, vars=(0, 1), linecolor="blue", color=:blue, alpha=0.8,
+    xlab="t", ylab="x")
+savefig("./t-x.png")
+
+# Plots.plot(solz1, vars=(0, 5), linecolor="blue", color=:blue, alpha=0.8,
 #     xlab="t", ylab="y")
-Plots.plot(solz1, vars=(0, 9), linecolor="blue", color=:blue, alpha=0.8,
-    xlab="t", ylab="z")
+# savefig("./t-y.png")
+
+# Plots.plot(solz1, vars=(0, 9), linecolor="blue", color=:blue, alpha=0.8,
+#     xlab="t", ylab="z")
+# savefig("./t-z.png")
